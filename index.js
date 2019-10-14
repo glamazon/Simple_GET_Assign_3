@@ -10,7 +10,7 @@ function getDogImage(breed) {
 function displayResults(responseJson) {
 	console.log(responseJson);
 
-	if (responseJson.message == 'Breed not found') {
+	if (responseJson.message === 'Breed not found (master breed does not exist)') {
 		alert("That breed wasn't found, please try another.");
 	} else {
 		//replace the existing image with the new one
